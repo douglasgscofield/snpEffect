@@ -13,10 +13,11 @@ SNPs are described in a simple `data.frame` format, and SNP effects are returned
 
 ### Example
 
-````R
+
+```r
 source("snpEffect.R")
 snp = read.delim("snps.txt")  # dataframe format to be described
 genome = read.DNAStringSet("genome.fa")
 gff = import.gff3("annotation.gff")
 snp.effects = snpEffect(snp, gff, genome)
-````
+```
